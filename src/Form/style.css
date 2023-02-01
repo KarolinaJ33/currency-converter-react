@@ -1,0 +1,8 @@
+.form__field {
+    background: #f193051f;
+    border-radius: 10px;
+}
+
+.form__button:hover{
+    background-color:#e9b76c7e ;
+}
