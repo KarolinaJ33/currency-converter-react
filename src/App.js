@@ -3,7 +3,6 @@ import CurrencySelect from "./CurrencySelect";
 import Form from "./Form";
 import Container from "./Container";
 import Header from "./Header";
-import Result from "./Result";
 import Button from "./Button";
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
           />
         }
         <Button  />
-        <Result />
      </Container>
     );  
    
