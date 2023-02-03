@@ -1,3 +1,4 @@
+import "./style.css";
 
 export const Result  = ({ result }) => (
     <p className="fieldset__result">

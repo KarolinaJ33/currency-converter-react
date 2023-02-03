@@ -1,6 +1,7 @@
 import "./style.css";
 import { currencies } from "../currencies";
 import { useState } from "react";
+import { Result } from "./Result";
 
 export const Form = ({ calculateResult, result}) => {
   const [currency, setCurrency] = useState(currencies[0].short);
@@ -12,6 +13,7 @@ export const Form = ({ calculateResult, result}) => {
   }
 
   return (
+    <form className="form" onSubmit={onSubmit}>
     <fieldset className="fieldset">
     <legend> Kalkulator walut</legend>
     <span className="fieldset__currency">Kwota:</span>
@@ -42,5 +44,6 @@ export const Form = ({ calculateResult, result}) => {
       <button>Przelicz</button>
       
     </fieldset>
+    </form>
     );
   };
