@@ -1,4 +1,5 @@
 import "./style.css";
+import { currencies } from "../currencies";
 
 const Form = () => (
 <p>

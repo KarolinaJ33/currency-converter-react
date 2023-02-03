@@ -1,9 +1,9 @@
 import React, { useState} from 'react';
-import CurrencySelect from "./CurrencySelect";
+
 import Form from "./Form";
-import Container from "./Container";
-import Header from "./Header";
-import Button from "./Button";
+
+
+
 
 function App() {
   const curriences = [
@@ -11,6 +11,7 @@ function App() {
     {id: 2, name: "Korona czeska", shortName: "CZK", rate: "0,20" },
     {id: 3, name: "Forint węgierski", shortName: "HUF", rate: "1,21" },
   ];
+
 
   return (
     <Container>
