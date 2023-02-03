@@ -4,7 +4,7 @@ export const Result  = ({ result }) => (
     <p className="fieldset__result">
     {result !== undefined && (
         <>
-        Kwota po przeliczeniu&nbsp;={" "}
+        {result.sourceAmount.toFixed(2)} PLN ={" "}
 
         <strong>
         {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
