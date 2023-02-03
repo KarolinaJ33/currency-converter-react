@@ -1,19 +1,19 @@
 export const currencies = [
   {
      short: "EUR",
-     name: "Euro"
+     name: "Euro",
      rate: 4.7079,
   },
 
   {
      short: "CZK",
-     name: "Korona czeska"
+     name: "Korona czeska",
      rate: 0.1980,
   },
 
   {
      short: "NOK",
-     name: "Korona norweska"
+     name: "Korona norweska",
      rate: 0.4312,
   },
 
