@@ -1,33 +1,32 @@
 import React, { useState} from 'react';
-
+import { currencies } from "./currencies";
 import Form from "./Form";
 
 
 
 
+
 function App() {
-  const curriences = [
-    {id: 1, name: "Euro", shortName: "EUR", rate: "4,75" },
-    {id: 2, name: "Korona czeska", shortName: "CZK", rate: "0,20" },
-    {id: 3, name: "Forint węgierski", shortName: "HUF", rate: "1,21" },
-  ];
+  const [result, setResult] = useState();
 
+  const calculateResult =(currency, amount) => {
+    const rate = currencies
+      .find (({short}) => short === currency)
+      .rate;
+  }
 
-  return (
-    <Container>
-      <Header title="Kalkulator walutowy" />
-      <Form
-        title={<Header />}
-        />
-        firstLabel= Waluta: {
-          <CurrencySelect
-          curriences={curriences}
-          />
-        }
-        <Button  />
-     </Container>
-    );  
-   
-}
-
+  setResult({
+    sourceAmount: +amount,
+    targetAmount: amount / rate,
+    currency
+  });
+ 
+   return (
+     <Form
+       result={result}
+       calculateResult={calculateResult}
+     />
+   );
+ }
+    
 export default App;
