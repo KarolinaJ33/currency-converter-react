@@ -1,0 +1,7 @@
+.fieldset__result {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    max-width: 200px;
+    background-color: hsl(180, 71%, 89%);
+}

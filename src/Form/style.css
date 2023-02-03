@@ -1,6 +1,6 @@
 .form {
-    background: hsla(36, 96%, 48%, 0.122);
-    border-radius: 10px;
+    flex-basis: 550px;
+    margin: 0 auto;
 }
 
 .fieldset {

@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import { useState} from "react";
 import { currencies } from "./currencies";
 import { Form } from "./Form";
 
@@ -7,15 +7,15 @@ function App() {
 
   const calculateResult =(currency, amount) => {
     const rate = currencies
-      .find (({short}) => short === currency)
+      .find(({short}) => short === currency)
       .rate;
-  }
 
   setResult({
     sourceAmount: +amount,
     targetAmount: amount / rate,
     currency
   });
+}
  
    return (
      <Form
