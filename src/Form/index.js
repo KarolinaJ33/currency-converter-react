@@ -15,20 +15,23 @@ export const Form = ({ calculateResult, result}) => {
   return (
     <form className="form" onSubmit={onSubmit}>
     <fieldset className="fieldset">
-    <legend> Kalkulator walut</legend>
+    <legend>Kalkulator walut</legend>
+    <p>
     <span className="fieldset__currency">Kwota:</span>
     <input
     value={amount}
     onChange= {({target}) => setAmount(target.value)}
+    className="fieldset__output"
     type="number"
     step="0.1"
     name="zl"
     id="zl"
     required
-    placeholder="Wpisz kwotę"
+    placeholder="Wpisz kwotę w PLN"
     />
+    </p>
     <span className="fieldset__currency">Waluta: </span>
-    <select
+    <select className="fieldset__output"
     value= {currency}
     onChange= {({target}) => setCurrency(target.value)}
     >
@@ -41,8 +44,13 @@ export const Form = ({ calculateResult, result}) => {
         </option>
       )))}
       </select>
-      <button>Przelicz</button>
-      
+      <p>
+      <button className="fieldset__button">Przelicz</button>
+      </p>
+
+      <Result result={result}/>
+      <p> Kurs z 2.02.2023r.</p>
+
     </fieldset>
     </form>
     );

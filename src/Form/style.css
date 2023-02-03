@@ -14,3 +14,19 @@
     max-width: 200px;
     display: inline-block;
 }
+
+.fieldset__button {
+    background-color: rgb(246, 246, 120); 
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 700px;
+    margin: 10px;
+    padding: 10px;
+    margin-inline: 5px; 
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
