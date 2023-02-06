@@ -55,6 +55,12 @@
     background-color: hsla(258, 87%, 50%, 0.603);
 }
 
+.fieldset__supplement {
+    font-size: small;
+    margin:auto;
+    text-align: right;
+}
+
 
 
 
