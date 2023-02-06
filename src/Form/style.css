@@ -10,6 +10,7 @@
 }
 
 .fieldset__legend {
+    color: white;
     border: 1px solid black;
     border-radius:10px;
     font-weight: 700;
@@ -28,7 +29,7 @@
 
 .fieldset__button {
     background-color: hsla(258, 77%, 55%, 0.493); 
-    color: black;
+    color: white;
     border: 1px solid black;
     border-radius: 10px;
     width: 100%;
@@ -37,7 +38,7 @@
     padding: 10px;
     margin-inline: 5px; 
     font-weight: bold;
-    transition: 0.3s;
+    transition: 0.1s;
     cursor: pointer;
 }
 
@@ -47,8 +48,8 @@
 
 .fieldset__button:hover {
     background-color: hsla(258, 57%, 45%, 0.493);
-    transition: 0.3s;
-    scale: 1.05;
+    transition: 0.1s;
+    scale: 1.01;
 }
 
 .fieldset__button:active {
