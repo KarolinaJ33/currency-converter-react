@@ -20,6 +20,7 @@ export const Form = ({ calculateResult, result}) => {
     <span className="fieldset__currency">Kwota:</span>
     <input
     value={amount}
+    autoFocus
     onChange= {({target}) => setAmount(target.value)}
     className="fieldset__output"
     type="number"
