@@ -15,7 +15,7 @@ export const Form = ({ calculateResult, result}) => {
   return (
     <form className="form" onSubmit={onSubmit}>
     <fieldset className="fieldset">
-    <legend>Kalkulator walut</legend>
+    <legend className="fieldset__legend">Kalkulator walut</legend>
     <p>
     <span className="fieldset__currency">Kwota:</span>
     <input
@@ -44,7 +44,7 @@ export const Form = ({ calculateResult, result}) => {
         </option>
       )))}
       </select>
-      <p>
+      <p className="fieldset__buttonContainer">
       <button className="fieldset__button">Przelicz</button>
       </p>
 

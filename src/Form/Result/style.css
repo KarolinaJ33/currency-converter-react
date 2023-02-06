@@ -1,7 +1,7 @@
-.fieldset__output{
+.fieldset__output {
     padding: 10px;
     border: 1px solid black;
-    border-radius: 15px;
-    max-width: 200px;
-    background-color: hsl(180, 71%, 89%);
+    border-radius: 10px;
+    max-width: 300px;
+    background-color: hsla(180, 15%, 95%, 0.685);
 }

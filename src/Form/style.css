@@ -5,9 +5,20 @@
 
 .fieldset {
     border: 1px solid black;
-    border-radius: 15px;
-    background-color: rgb(239, 240, 184);
+    border-radius: 10px;
+    background-color: rgba(250, 250, 246, 0.568);
 }
+
+.fieldset__legend {
+    border: 1px solid black;
+    border-radius:10px;
+    font-weight: 700;
+    margin: 10px;
+    padding: 10px;
+    background-color: hsla(258, 77%, 55%, 0.493); 
+    font-weight: bold;
+}
+
 
 .fieldset__currency {
     align-items: left;
@@ -16,10 +27,10 @@
 }
 
 .fieldset__button {
-    background-color: rgb(246, 246, 120); 
+    background-color: hsla(258, 77%, 55%, 0.493); 
     color: black;
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 10px;
     width: 100%;
     max-width: 700px;
     margin: 10px;
@@ -27,6 +38,23 @@
     margin-inline: 5px; 
     font-weight: bold;
     transition: 0.3s;
+    cursor: pointer;
 }
+
+.fieldset__buttonContainer{
+    text-align: center;
+  }
+
+.fieldset__button:hover {
+    background-color: hsla(258, 57%, 45%, 0.493);
+    transition: 0.3s;
+    scale: 1.05;
+}
+
+.fieldset__button:active {
+    background-color: hsla(258, 87%, 50%, 0.603);
+}
+
+
 
 
