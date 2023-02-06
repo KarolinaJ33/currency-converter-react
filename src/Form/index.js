@@ -23,8 +23,8 @@ export const Form = ({ calculateResult, result}) => {
     autoFocus
     onChange= {({target}) => setAmount(target.value)}
     className="fieldset__output"
-    type="number"
-    step="0.1"
+    type="number" min="0"
+    step="0.01"
     name="zl"
     id="zl"
     required
@@ -50,7 +50,7 @@ export const Form = ({ calculateResult, result}) => {
       </p>
 
       <Result result={result}/>
-      <p> Kurs z 2.02.2023r.</p>
+      <p className="fieldset__supplement"> Kurs z 2.02.2023r.</p>
 
     </fieldset>
     </form>
