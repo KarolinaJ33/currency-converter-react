@@ -14,45 +14,45 @@ export const Form = ({ calculateResult, result}) => {
 
   return (
     <form className="form" onSubmit={onSubmit}>
-    <fieldset className="fieldset">
-    <legend className="fieldset__legend">Kalkulator walut</legend>
-    <p>
-    <span className="fieldset__currency">Kwota:</span>
-    <input
-    value={amount}
-    autoFocus
-    onChange= {({target}) => setAmount(target.value)}
-    className="fieldset__output"
-    type="number" min="0"
-    step="0.01"
-    name="zl"
-    id="zl"
-    required
-    placeholder="Wpisz kwotę w PLN"
-    />
-    </p>
-    <span className="fieldset__currency">Waluta: </span>
-    <select className="fieldset__output"
-    value= {currency}
-    onChange= {({target}) => setCurrency(target.value)}
+      <fieldset className="fieldset">
+        <legend className="fieldset__legend">Kalkulator walut</legend>
+        <p>
+      <span className="fieldset__currency">Kwota:</span>
+        <input
+          value={amount}
+          autoFocus
+          onChange= {({target}) => setAmount(target.value)}
+          className="fieldset__output"
+          type="number" min="0"
+          step="0.01"
+          name="zl"
+          id="zl"
+          required
+          placeholder="Wpisz kwotę w PLN"
+        />
+        </p>
+      <span className="fieldset__currency">Waluta: </span>
+        <select className="fieldset__output"
+          value= {currency}
+          onChange= {({target}) => setCurrency(target.value)}
     >
       {currencies.map((currency => (
         <option
-        key={currency.short}
-        value={currency.short}
+          key={currency.short}
+          value={currency.short}
         >
           {currency.name}
         </option>
       )))}
-      </select>
-      <p className="fieldset__buttonContainer">
-      <button className="fieldset__button">Przelicz</button>
-      </p>
+        </select>
+        <p className="fieldset__buttonContainer">
+          <button className="fieldset__button">Przelicz</button>
+        </p>
 
       <Result result={result}/>
-      <p className="fieldset__supplement"> Kurs z 2.02.2023r.</p>
+        <p className="fieldset__supplement"> Kurs z 2.02.2023r.</p>
 
-    </fieldset>
+      </fieldset>
     </form>
     );
   };
