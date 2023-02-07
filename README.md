@@ -2,7 +2,7 @@
 
 ### Description
 ![image](https://user-images.githubusercontent.com/80458977/217201709-24bcec9b-afbe-4b08-8c11-b48c9d59daa4.png)
-This application allows to converting the amount from polish currencyPLN into some other currencies. 
+This application allows to converting the amount from polish currency PLN into some other currencies. 
 
 ![image](https://user-images.githubusercontent.com/80458977/217201764-aa9d2301-f237-42e8-990c-273ec7e4cb35.png)
 The project has been moved to React from raw JS.
