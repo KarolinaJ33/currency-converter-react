@@ -14,30 +14,30 @@ export const Form = ({ calculateResult, result}) => {
 
   return (
     <form className="form" onSubmit={onSubmit}>
-      <fieldset className="fieldset">
-        <legend className="fieldset__legend">Kalkulator walut</legend>
-        <p>
-      <span className="fieldset__currency">Kwota:</span>
+        <fieldset className="fieldset">
+          <legend className="fieldset__legend">Kalkulator walut</legend>
+          <p>
+        <span className="fieldset__currency">Kwota:</span>
         <input
-          value={amount}
-          autoFocus
-          onChange= {({target}) => setAmount(target.value)}
-          className="fieldset__output"
-          type="number" min="0"
-          step="0.01"
-          name="zl"
-          id="zl"
-          required
-          placeholder="Wpisz kwotę w PLN"
+            value={amount}
+            autoFocus
+            onChange= {({target}) => setAmount(target.value)}
+            className="fieldset__output"
+            type="number" min="0"
+            step="0.01"
+            name="zl"
+            id="zl"
+            required
+            placeholder="Wpisz kwotę w PLN"
         />
-        </p>
-      <span className="fieldset__currency">Waluta: </span>
+          </p>
+        <span className="fieldset__currency">Waluta: </span>
         <select className="fieldset__output"
-          value= {currency}
-          onChange= {({target}) => setCurrency(target.value)}
+            value= {currency}
+            onChange= {({target}) => setCurrency(target.value)}
     >
-      {currencies.map((currency => (
-        <option
+                {currencies.map((currency => (
+                    <option
           key={currency.short}
           value={currency.short}
         >

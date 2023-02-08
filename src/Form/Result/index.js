@@ -5,9 +5,8 @@ export const Result  = ({ result }) => (
     {result !== undefined && (
       <>
         {result.sourceAmount.toFixed(2)} PLN ={" "}
-
         <strong>
-        {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
+            {result.targetAmount.toFixed(2)}&nbsp;{result.currency}
         </strong>
       </>
     )}
