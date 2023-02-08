@@ -10,7 +10,7 @@ The project has been moved to React from raw JS.
 ![image](https://user-images.githubusercontent.com/80458977/217201923-054955a7-6a53-49c5-9b13-9ae9799227e7.png)
 The app also works responsibly on small screens.
 
-![Currency Converter GIF](public/animationCurrencyConverter.gif)
+![Currency Converter GIF](public/animationConverter.gif)
 
 ### Demo
 [See Currency Converter](https://karolinaj33.github.io/currency-converter-react/)
