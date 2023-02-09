@@ -1,62 +1,89 @@
 .form {
     flex-basis: 550px;
-    margin: 0 auto;
+    margin: 20px 0;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 2px 2px 20px black;
+    height: 400px;
+    background-color: rgba(199, 224, 248, 0.822);
+    border-radius: 10px;
 }
 
-.fieldset {
+@media (max-width: 767px) {
+    .form {
+        height: 600px;
+    }
+}
+
+.form__output {
+    padding: 10px;
     border: 1px solid black;
     border-radius: 10px;
+    max-width: 300px;
     background-color: white;
 }
 
-.fieldset__legend {
+.form__header {
     color: white;
-    border: 1px solid black;
-    border-radius:10px;
+    font-size:20px;
+    max-width: 200px;
+    width:100%;
+    border: 1px solid hsl(258, 77%, 55%);
+    border-radius: 10px;
     font-weight: 700;
-    margin: 10px;
     padding: 10px;
     background-color: hsl(258, 77%, 55%); 
-    font-weight: bold;
-}
-
-
-.fieldset__currency {
-    align-items: left;
-    max-width: 200px;
+    text-align: center;
     display: inline-block;
 }
 
-.fieldset__button {
+.form__currency {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    text-align: left;
+    margin-right: 5px;  
+}
+
+.form__field {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.form__button {
     background-color: hsl(258, 77%, 55%); 
     color: white;
-    border: 1px solid black;
+    border: 1px solid hsl(258, 77%, 55%);
     border-radius: 10px;
     width: 100%;
-    max-width: 700px;
+    max-width: 500px;
     margin: 10px;
     padding: 10px;
     margin-inline: 5px; 
     font-weight: bold;
     transition: 0.1s;
     cursor: pointer;
+    display: inline-block;
 }
 
-.fieldset__buttonContainer {
+.form__buttonContainer {
     text-align: center;
   }
 
-.fieldset__button:hover {
+.form__button:hover {
     background-color: hsl(258, 57%, 45%);
     transition: 0.1s;
     scale: 1.01;
 }
 
-.fieldset__button:active {
+.form__button:active {
     background-color: hsl(258, 87%, 50%);
 }
 
-.fieldset__supplement {
+.form__supplement {
     font-size: small;
     margin:auto;
     text-align: right;

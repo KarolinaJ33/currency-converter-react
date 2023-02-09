@@ -1,7 +1,4 @@
-.fieldset__output {
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    max-width: 300px;
-    background-color: white;
+.form__result {
+    color: hsl(258, 77%, 55%);
+    font-size: 20px;
 }

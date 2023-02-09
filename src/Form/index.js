@@ -14,15 +14,14 @@ export const Form = ({ calculateResult, result}) => {
 
   return (
     <form className="form" onSubmit={onSubmit}>
-        <fieldset className="fieldset">
-          <legend className="fieldset__legend">Kalkulator walut</legend>
+        
+          <h1 className="form__header">Kalkulator walut</h1>
           <p>
-        <span className="fieldset__currency">Kwota:</span>
+        <span className="form__currency">Kwota:</span>
         <input
           value={amount}
-          autoFocus
           onChange= {({target}) => setAmount(target.value)}
-          className="fieldset__output"
+          className="form__field"
           type="number" min="0"
           step="0.01"
           name="zl"
@@ -31,9 +30,10 @@ export const Form = ({ calculateResult, result}) => {
           placeholder="Wpisz kwotę w PLN"
         />
           </p>
-        <span className="fieldset__currency">Waluta: </span>
-        <select className="fieldset__output"
+        <span className="form__currency">Waluta: </span>
+        <select
           value= {currency}
+          className="form__field"
           onChange= {({target}) => setCurrency(target.value)}
     >
             {currencies.map((currency => (
@@ -45,14 +45,13 @@ export const Form = ({ calculateResult, result}) => {
         </option>
       )))}
         </select>
-        <p className="fieldset__buttonContainer">
-          <button className="fieldset__button">Przelicz</button>
+        <p className="form__buttonContainer">
+          <button className="form__button">Przelicz</button>
         </p>
 
       <Result result={result} />
-        <p className="fieldset__supplement"> Kurs z 2.02.2023r.</p>
+        <p className="form__supplement"> Kurs z 2.02.2023r.</p>
 
-      </fieldset>
     </form>
     );
   };
