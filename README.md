@@ -1,6 +1,6 @@
 # Currency converter
 
-### Description
+## Description
 ![image](https://user-images.githubusercontent.com/80458977/217201709-24bcec9b-afbe-4b08-8c11-b48c9d59daa4.png)
 This application allows to converting the amount from polish currency PLN into some other currencies. 
 
@@ -10,12 +10,12 @@ The project has been moved to React from raw JS.
 ![image](https://user-images.githubusercontent.com/80458977/217201923-054955a7-6a53-49c5-9b13-9ae9799227e7.png)
 The app also works responsibly on small screens.
 
-![Currency Converter GIF](public/animationCurrencyConverter.gif)
+![Currency Converter GIF](public/animationConverter.gif)
 
-### Demo
+## Demo
 [See Currency Converter](https://karolinaj33.github.io/currency-converter-react/)
 
-### Technologies used in project
+## Technologies used in project
 `HTML`
 `CSS`
 `javaScript ES6+`
@@ -34,7 +34,7 @@ The app also works responsibly on small screens.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
