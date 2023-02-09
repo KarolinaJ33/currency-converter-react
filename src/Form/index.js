@@ -49,7 +49,7 @@ export const Form = ({ calculateResult, result}) => {
           <button className="fieldset__button">Przelicz</button>
         </p>
 
-      <Result result={result}/>
+      <Result result={result} />
         <p className="fieldset__supplement"> Kurs z 2.02.2023r.</p>
 
       </fieldset>
