@@ -2,7 +2,7 @@ import "./style.css";
 
 export const Result = ({ result }) => (
   <p className="form__result">
-    {result !== undefined && (
+    {!!result && (
       <>
         {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;=
         {" "}
