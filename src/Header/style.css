@@ -3,7 +3,7 @@
     color: hsl(240, 64%, 27%);
     font-weight: bold;
     font-size: 20px;
-    padding-top: 20px;
+    padding: 10px;
 }
 
 .header__title {
