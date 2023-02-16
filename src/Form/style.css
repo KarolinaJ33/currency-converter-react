@@ -1,5 +1,4 @@
 .form {
-    flex-basis: 550px;
     margin: 20px 0;
     text-align: center;
     padding: 10px;
@@ -23,23 +22,9 @@
     background-color: white;
 }
 
-.form__header {
-    color: white;
-    font-size:20px;
-    max-width: 200px;
-    width:100%;
-    border: 1px solid hsl(258, 77%, 55%);
-    border-radius: 10px;
-    font-weight: 700;
-    padding: 10px;
-    background-color: hsl(258, 77%, 55%); 
-    text-align: center;
-    display: inline-block;
-}
-
 .form__currency {
     width: 100%;
-    max-width: 200px;
+    max-width: 500px;
     display: inline-block;
     text-align: left;
     margin-right: 5px;  
@@ -88,6 +73,7 @@
     margin:auto;
     text-align: right;
 }
+
 
 
 

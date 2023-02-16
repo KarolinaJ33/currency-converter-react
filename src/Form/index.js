@@ -15,7 +15,7 @@ export const Form = ({ calculateResult, result}) => {
   return (
     <form className="form" onSubmit={onSubmit}>
         
-          <h1 className="form__header">Kalkulator walut</h1>
+          
           <p>
         <span className="form__currency">Kwota:</span>
         <input
