@@ -1,8 +1,10 @@
-.container {
+import styled from "styled-components";
+
+export const Box = styled.main`
     padding: 20px;
     background-color: rgba(199, 224, 248, 0.822);
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 700px;
     text-align: center;
-    margin: auto;
-}
+    margin: 0 auto;
+`;
