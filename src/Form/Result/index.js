@@ -1,7 +1,7 @@
-import "./style.css";
+import { Effect } from "./styled";
 
 export const Result = ({ result }) => (
-  <p className="form__result">
+  <Effect>
     {!!result && (
       <>
         {result.sourceAmount.toFixed(2)}&nbsp;PLN&nbsp;=
@@ -11,5 +11,5 @@ export const Result = ({ result }) => (
         </strong>
       </>
     )}
-  </p>
+  </Effect>
 );
