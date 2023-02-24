@@ -1,7 +1,7 @@
-import "./style.css";
 import { currencies } from "../currencies";
 import { useState } from "react";
 import { Result } from "./Result";
+import { Sheet, Currency, Field, Button, ButtonContainer, Supplement } from "./styled";
 
 export const Form = ({ calculateResult, result}) => {
   const [currency, setCurrency] = useState(currencies[0].short);
@@ -13,15 +13,16 @@ export const Form = ({ calculateResult, result}) => {
   }
 
   return (
-    <form className="form" onSubmit={onSubmit}>
-        
-          
-          <p>
-        <span className="form__currency">Kwota:</span>
-        <input
+    <Sheet 
+      onSubmit={onSubmit}
+    >
+    <p>
+        <Currency>
+          Kwota:
+        </Currency>
+        <Field
           value={amount}
           onChange= {({target}) => setAmount(target.value)}
-          className="form__field"
           type="number" min="0"
           step="0.01"
           name="zl"
@@ -30,10 +31,12 @@ export const Form = ({ calculateResult, result}) => {
           placeholder="Wpisz kwotę w PLN"
         />
           </p>
-        <span className="form__currency">Waluta: </span>
-        <select
+        <Currency>
+          Waluta: 
+        </Currency>
+        <Field
+          as="select"
           value= {currency}
-          className="form__field"
           onChange= {({target}) => setCurrency(target.value)}
     >
             {currencies.map((currency => (
@@ -44,14 +47,14 @@ export const Form = ({ calculateResult, result}) => {
           {currency.name}
         </option>
       )))}
-        </select>
-        <p className="form__buttonContainer">
-          <button className="form__button">Przelicz</button>
-        </p>
+        </Field>
+        <ButtonContainer>
+          <Button>Przelicz</Button>
+        </ButtonContainer>
 
       <Result result={result} />
-        <p className="form__supplement"> Kurs z 2.02.2023r.</p>
+        <Supplement> Kurs z 2.02.2023r.</Supplement>
 
-    </form>
+    </Sheet>
     );
   };

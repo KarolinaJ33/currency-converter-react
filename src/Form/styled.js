@@ -1,4 +1,6 @@
-.form {
+import styled from "styled-components";
+
+export const Sheet = styled.form`
     margin: auto;
     text-align: center;
     padding: 10px;
@@ -6,40 +8,29 @@
     height: 400px;
     background-color: rgba(199, 224, 248, 0.822);
     border-radius: 10px;
-}
 
-
-@media (max-width: 767px) {
-    .form {
+    @media (max-width: 767px) {
         height: 600px;
     }
-}
+`;
 
-.form__output {
-    padding: 10px;
-    border: 1px solid black;
-    border-radius: 10px;
-    max-width: 300px;
-    background-color: white;
-}
-
-.form__currency {
+export const Currency = styled.span`
     width: 100%;
     max-width: 500px;
     display: inline-block;
     text-align: left;
-    margin-right: 5px;  
-}
+    margin-right: 5px;
+`;
 
-.form__field {
+export const Field = styled.input`
     border: 1px solid #ccc;
     padding: 10px;
     width: 100%;
     max-width: 250px;
     border-radius: 10px;
-}
+`;
 
-.form__button {
+export const Button = styled.button`
     background-color: hsl(258, 77%, 55%); 
     color: white;
     border: 1px solid hsl(258, 77%, 55%);
@@ -53,29 +44,24 @@
     transition: 0.1s;
     cursor: pointer;
     display: inline-block;
-}
 
-.form__buttonContainer {
+    &:hoover{
+     background-color: hsl(258, 57%, 45%);
+     transition: 0.1s;
+     scale: 1.01; 
+    }
+
+    &:active{
+     background-color: hsl(258, 87%, 50%);
+    }
+`;
+
+export const ButtonContainer = styled.p`
     text-align: center;
-  }
+`;
 
-.form__button:hover {
-    background-color: hsl(258, 57%, 45%);
-    transition: 0.1s;
-    scale: 1.01;
-}
-
-.form__button:active {
-    background-color: hsl(258, 87%, 50%);
-}
-
-.form__supplement {
+export const Supplement = styled.div`
     font-size: small;
-    margin:auto;
+    margin: auto;
     text-align: right;
-}
-
-
-
-
-
+`;
