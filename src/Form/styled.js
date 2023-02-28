@@ -6,10 +6,10 @@ export const StyledForm = styled.form`
     padding: 10px;
     box-shadow: 2px 2px 20px black;
     height: 400px;
-    background-color: rgba(199, 224, 248, 0.822);
+    background-color: ${({ theme }) => theme.color.perfume};
     border-radius: 10px;
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         height: 600px;
     }
 `;
@@ -23,7 +23,7 @@ export const Currency = styled.span`
 `;
 
 export const Field = styled.input`
-    border: 1px solid #ccc;
+    border: 1px solid ${({ theme }) => theme.color.silver};
     padding: 10px;
     width: 100%;
     max-width: 250px;
@@ -31,9 +31,9 @@ export const Field = styled.input`
 `;
 
 export const Button = styled.button`
-    background-color: hsl(258, 77%, 55%); 
+    background-color: ${({ theme }) => theme.color.purpleHeart};
     color: white;
-    border: 1px solid hsl(258, 77%, 55%);
+    border: 1px solid ${({ theme }) => theme.color.purpleHeart};
     border-radius: 10px;
     width: 100%;
     max-width: 500px;
@@ -46,13 +46,13 @@ export const Button = styled.button`
     display: inline-block;
 
     &:hoover{
-     background-color: hsl(258, 57%, 45%);
+     background-color: ${({ theme }) => theme.color.fuchsiaBlue};
      transition: 0.1s;
      scale: 1.01; 
     }
 
     &:active{
-     background-color: hsl(258, 87%, 50%);
+     background-color: ${({ theme }) => theme.color.mediumPurple};
     }
 `;
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.main`
     padding: 20px;
-    background-color: rgba(199, 224, 248, 0.822);
+    background-color: ${({ theme }) => theme.color.perfume};
     border-radius: 10px;
     max-width: 700px;
     text-align: center;
