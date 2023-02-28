@@ -1,7 +1,7 @@
 import { currencies } from "../currencies";
 import { useState } from "react";
 import { Result } from "./Result";
-import { Sheet, Currency, Field, Button, ButtonContainer, Supplement } from "./styled";
+import { StyledForm, Currency, Field, Button, ButtonContainer, Supplement } from "./styled";
 
 export const Form = ({ calculateResult, result}) => {
   const [currency, setCurrency] = useState(currencies[0].short);
@@ -13,7 +13,7 @@ export const Form = ({ calculateResult, result}) => {
   }
 
   return (
-    <Sheet 
+    <StyledForm 
       onSubmit={onSubmit}
     >
     <p>
@@ -55,6 +55,6 @@ export const Form = ({ calculateResult, result}) => {
       <Result result={result} />
         <Supplement> Kurs z 2.02.2023r.</Supplement>
 
-    </Sheet>
+    </StyledForm>
     );
   };

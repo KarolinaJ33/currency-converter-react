@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Sheet = styled.form`
+export const StyledForm = styled.form`
     margin: auto;
     text-align: center;
     padding: 10px;
