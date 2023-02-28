@@ -4,7 +4,7 @@ export const theme = {
        purpleHeart: "#6934e5",
        perfume: "#CCB7FA",
        fuchsiaBlue: "#7953D0",
-       mediumPurple: "#9B7FDC",
+       trueV: "#8564D3",
        grey: "#808080",
        silver: "#cccccc",
     },

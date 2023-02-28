@@ -45,14 +45,14 @@ export const Button = styled.button`
     cursor: pointer;
     display: inline-block;
 
-    &:hoover{
+    &:hover{
      background-color: ${({ theme }) => theme.color.fuchsiaBlue};
      transition: 0.1s;
      scale: 1.01; 
     }
 
     &:active{
-     background-color: ${({ theme }) => theme.color.mediumPurple};
+     background-color: ${({ theme }) => theme.color.trueV};
     }
 `;
 
