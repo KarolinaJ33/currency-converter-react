@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Box = styled.main`
+export const Container = styled.main`
     padding: 20px;
     background-color: rgba(199, 224, 248, 0.822);
     border-radius: 10px;
