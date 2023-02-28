@@ -1,12 +1,15 @@
-html {
-  box-sizing: border-box;
-}
+import { createGlobalStyle } from "styled-components";
+  
+export const GlobalStyle = createGlobalStyle`
+  html {
+    box-sizing: border-box;
+  }
 
-*, ::after, ::before {
+  *, ::after, ::before {
   box-sizing: inherit;
-}
+  }
 
-#root {
+  #root {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
@@ -15,4 +18,5 @@ html {
     background-image: url("./backgroundCurrency.jpg");
     background-size: cover;
     background-position: center;
-}
+  }
+`;
