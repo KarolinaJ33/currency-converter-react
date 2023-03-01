@@ -1,7 +1,7 @@
 import { Name, Title } from "./styled";
 
 const Header = () => (
-    <Name className="header">
+    <Name>
         <Title>
             Kalkulator walut
         </Title>

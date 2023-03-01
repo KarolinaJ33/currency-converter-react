@@ -4,9 +4,9 @@ export const StyledForm = styled.form`
     margin: auto;
     text-align: center;
     padding: 10px;
-    box-shadow: 2px 2px 20px black;
+    box-shadow: 1px 1px 10px ${({ theme }) => theme.color.silver};
     height: 400px;
-    background-color: ${({ theme }) => theme.color.perfume};
+    background-color: ${({ theme }) => theme.color.white};
     border-radius: 10px;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
@@ -16,10 +16,14 @@ export const StyledForm = styled.form`
 
 export const Currency = styled.span`
     width: 100%;
-    max-width: 500px;
+    max-width: 100px;
     display: inline-block;
     text-align: left;
-    margin-right: 5px;
+    margin: auto;
+
+    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+         padding: 5px;
+    } 
 `;
 
 export const Field = styled.input`
@@ -32,14 +36,15 @@ export const Field = styled.input`
 
 export const Button = styled.button`
     background-color: ${({ theme }) => theme.color.purpleHeart};
-    color: white;
+    color: ${({ theme }) => theme.color.white};
     border: 1px solid ${({ theme }) => theme.color.purpleHeart};
     border-radius: 10px;
     width: 100%;
     max-width: 500px;
     margin: 10px;
     padding: 10px;
-    margin-inline: 5px; 
+    margin-inline: 1px; 
+    font-size: 20px;
     font-weight: bold;
     transition: 0.1s;
     cursor: pointer;
