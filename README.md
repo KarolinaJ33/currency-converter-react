@@ -26,6 +26,7 @@ The app also works responsibly on small screens.
 `Create react app`
 `Styled components`
 `Theme provider`
+`React Hooks (useEffect, useState)`
 `Webpack`
 `Babel`
 `Git`
