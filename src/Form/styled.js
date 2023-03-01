@@ -11,6 +11,7 @@ export const StyledForm = styled.form`
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
         height: 600px;
+        
     }
 `;
 
@@ -23,6 +24,7 @@ export const Currency = styled.span`
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
          padding: 5px;
+         text-align: center;
     } 
 `;
 
