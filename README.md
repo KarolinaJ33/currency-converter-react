@@ -24,7 +24,6 @@ The app also works responsibly on small screens.
 `Normalize.css`
 `React.js`
 `Create react app`
-
 `Styled components`
 `Theme provider`
 `Webpack`
