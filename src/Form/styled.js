@@ -5,13 +5,12 @@ export const StyledForm = styled.form`
     text-align: center;
     padding: 10px;
     box-shadow: 1px 1px 10px ${({ theme }) => theme.color.silver};
-    height: 400px;
+    height: 300px;
     background-color: ${({ theme }) => theme.color.white};
     border-radius: 10px;
 
     @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-        height: 600px;
-        
+        height: 420px;    
     }
 `;
 
