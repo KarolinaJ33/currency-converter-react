@@ -17,17 +17,19 @@ The app also works responsibly on small screens.
 
 ## Technologies used in project
 `HTML`
-`CSS`
-`javaScript ES6+`
+`CSS (Grid, Flex, media queries)`
+`JavaScript ES6+`
 `BEM Convention`
 `Open Graph`
-`FLEX`
-`normalise.css`
-`react.js`
-`node.js`
-`create react app`
-`webpack`
-`babel`
+`Normalize.css`
+`React.js`
+`Create react app`
+`Styled components`
+`Theme provider`
+`React Hooks (useEffect, useState)`
+`Webpack`
+`Babel`
+`Git`
 
 
 
