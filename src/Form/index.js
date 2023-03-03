@@ -7,7 +7,9 @@ import {
   Field,
   Button,
   ButtonContainer,
-  Supplement,  
+  Supplement,
+  Loading,
+  Failure,
 } from "./styled";
 
 export const Form = () => {
@@ -35,6 +37,13 @@ export const Form = () => {
   return (
     <StyledForm 
       onSubmit={onSubmit}>
+        {ratesData.state === "loading" ? (
+        <Loading>Chwileczkę, ładuję kursy walut z EBC</Loading>
+      ) : ratesData.state === "error" ? (
+        <Failure>
+          Strona nie załadowała się. Sprawdź połączenie z internetem
+        </Failure>
+      ) : (
         <>
           <p>
             <Currency>Kwota:</Currency>
@@ -75,7 +84,7 @@ export const Form = () => {
             {ratesData.date}
           </Supplement>
         </>
-    
+      )}
     </StyledForm>
   );
 };
