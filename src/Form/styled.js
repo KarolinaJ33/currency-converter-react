@@ -69,5 +69,15 @@ export const ButtonContainer = styled.p`
 export const Supplement = styled.div`
     font-size: small;
     margin: auto;
-    text-align: right;
+    text-align: center;
+`;
+
+export const Loading = styled.p`
+    color:  ${({ theme }) => theme.color.purpleHeart};
+    text-align: center;
+`;
+
+export const Failure = styled.p`
+    color:  ${({ theme }) => theme.color.crimson};
+    text-align: center;
 `;

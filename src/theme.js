@@ -6,6 +6,7 @@ export const theme = {
        trueV: "#8564D3",
        grey: "#808080",
        silver: "#cccccc",
+       crimson: "#DC143C",
     },
     breakpoint: {
         mobileMax: 767,
