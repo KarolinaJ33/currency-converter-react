@@ -35,9 +35,8 @@ export const Form = () => {
   };
 
   return (
-    <StyledForm 
-      onSubmit={onSubmit}>
-        {ratesData.state === "loading" ? (
+    <StyledForm onSubmit={onSubmit}>
+      {ratesData.state === "loading" ? (
         <Loading>Chwileczkę, ładuję kursy walut z EBC</Loading>
       ) : ratesData.state === "error" ? (
         <Failure>
@@ -65,15 +64,14 @@ export const Form = () => {
             value={currency}
             onChange={({ target }) => setCurrency(target.value)}
           >
-            {Object.keys(ratesData.rates || {}).map((currency) => (
-                <option 
-                  key={currency}
-                  value={currency}
-                >
-                  {currency}
-                </option>   
+            {Object.keys(ratesData.rates).map((currency) => (
+              <option 
+                key={currency}
+                value={currency}
+              >
+                {currency}
+              </option>
             ))}
-            
           </Field>
           <ButtonContainer>
             <Button>Przelicz</Button>
