@@ -75,6 +75,7 @@ export const Supplement = styled.div`
 export const Loading = styled.p`
     color:  ${({ theme }) => theme.color.purpleHeart};
     text-align: center;
+    padding-top: 90px;
 `;
 
 export const Failure = styled.p`
