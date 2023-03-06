@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const useRatesData = () => {
     const [ratesData, setRatesData] = useState({
-        staus: "loading",
+        state: "loading",
     });
     
     useEffect(() => {
@@ -23,11 +23,11 @@ export const useRatesData = () => {
              });
           } catch {
               setRatesData({
-                 status: "error",
+                 state: "error",
            });
         }
     };
-     setTimeout(fetchRates, 3000);
+     setTimeout(fetchRates, 1000);
 }, []);
 
 return ratesData;
