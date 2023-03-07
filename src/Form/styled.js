@@ -81,4 +81,5 @@ export const Loading = styled.p`
 export const Failure = styled.p`
     color:  ${({ theme }) => theme.color.crimson};
     text-align: center;
+    padding-top: 90px;
 `;
