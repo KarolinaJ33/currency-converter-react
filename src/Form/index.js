@@ -15,7 +15,7 @@ import {
 export const Form = () => {
   const [currency, setCurrency] = useState("EUR");
   const [amount, setAmount] = useState("");
-  const [result, setResult] = useState();
+  const [result, setResult] = useState(null);
 
   const ratesData = useRatesData();
 
