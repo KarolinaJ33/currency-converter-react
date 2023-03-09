@@ -40,7 +40,8 @@ export const Form = () => {
         <Loading>Chwileczkę, ładuję kursy walut z EBC</Loading>
       ) : ratesData.state === "error" ? (
         <Failure>
-          Strona nie załadowała się. Sprawdź połączenie z internetem
+          Strona nie załadowała się. Sprawdź połączenie z internetem i odśwież stronę przeglądarki. <br />
+          Jeśli to nie pomoże, postaramy się jak najszybciej usunąć błąd.
         </Failure>
       ) : (
         <>
