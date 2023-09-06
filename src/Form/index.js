@@ -77,7 +77,7 @@ export const Form = () => {
           </ButtonContainer>
           <Result result={result} />
           <Supplement>
-            Kursy walut pobrano z Europejskiego Centralnego Banku w dniu{" "}
+            Kursy walut pobrano z Europejskiego Banku Centralnego w dniu{" "}
             {ratesData.date}
           </Supplement>
         </>
